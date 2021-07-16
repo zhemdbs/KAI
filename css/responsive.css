@@ -1,0 +1,494 @@
+@charset "utf-8";
+
+/*color*/
+:root {
+	--main-color: #1C9AD6;
+	--main-color2: #222222;
+	--main-color3: #FFFFFF;
+	--more-color: #AAAAAA;
+	--stock-color: #EC429A;
+	--line-color: #C7C7C7;
+	--text2-color: #666666;
+	--aboutback-color: #F8F8F8;
+	--infoback-color: #E7E7E5;
+	--footer-color: #333333;
+}
+
+
+
+/*----------------------1900px----------------------*/
+@media screen and (max-width: 1900px) {
+  .chemistry_back {width: 65%; margin-right: -99px;}
+}
+/*----------------------1900px----------------------*/
+
+
+/*----------------------1550px----------------------*/
+@media screen and (max-width:1550px) {
+  /*common*/
+  .dots_container {right: 60px;}
+  .scroll_down {margin-left: -33px; bottom: 210px; width: 66px; height: 66px;}
+  main .main_list {padding-left: 60px; padding-right: 60px;}
+
+  /*header*/
+  header.on .header_wrap {padding: 0 60px;}
+  .header_wrap {padding: 0 60px;}
+
+  /*main*/
+  main .visual {height: calc(100vh + 170px);}
+
+  .ethanol .business_img {top: -65px;}
+}
+/*----------------------1550px----------------------*/
+
+
+/*----------------------1400px----------------------*/
+@media screen and (max-width : 1400px) {
+  /*common*/
+  h3 {padding-bottom: 55px; font-size: 47px;}
+  .dots_container {right: 50px;}
+  .scroll_down {bottom: 160px;}
+  .visual_text p {font-size: 24px;}
+  .visual_text strong {font-size: 80px;}
+  main .main_list {padding-left: 50px; padding-right: 50px;}
+  .chemical_text p br {display: none;}
+
+  /*header*/
+  header.on .header_wrap {padding: 0 50px;}
+  header.on .header_wrap .header_nav .gnb_menu > .gnb_list > a {padding: 22px 26px; }
+  .header_wrap {padding: 0 50px;}
+  .header_wrap .header_nav span {top: 89px;}
+  .header_wrap .header_nav ul > li .gnb_dropmenu {top: 90px;}
+  .header_wrap .header_nav .gnb_menu > .gnb_list > a {padding: 29px 26px;}
+  /*main*/
+  main .visual {height: calc(100vh + 130px);}
+  
+  .business_text .title {font-size: 36px;}
+  .business_text h2 strong {font-size: 58px;}
+  .chemistry_back {margin-right:  -50px; height: 1150px; bottom: -122px;}
+  .ethanol .business_text {width: 45%; padding-right: 4%;}
+  .ethanol .business_text h2 {padding-top: 44px; }
+  .business_text h2 span {font-size: 22px;}
+  .ethanol .business_img {top: 0;}
+  .ethanol .business_img video {width: 100%;}
+  .chemistry .business_text {width: 45%; padding-left: 4%;}
+  .chemistry .business_img img {width: 100%; height: auto; vertical-align: middle; position: relative;}
+  .colorpaste {padding: 18% 0 14%;}
+  .colorpaste_wrap {margin: 0 50px;}
+  .colorpaste .business_text {width: 100%;}
+  
+  .info_box .recruit h3 {font-size: 45px; left: 78px;}
+  .info_box .recruit_info {padding: 76px 82px;}
+  .info_box .corporate .corptext_box .corpbox_inner h3 {font-size: 45px;}
+
+  .news_box {margin: 0 50px;}
+  .news_list > li .news_content {width: 878px;}
+  .news_list > li .news_more {padding-left: 0;}
+}
+/*----------------------1400px----------------------*/
+
+
+/*----------------------1280px----------------------*/
+@media screen and (max-width:1280px) {
+  /*common*/
+  .scroll_down {bottom: 125px; width: 54px; height: 54px; margin-left: -27px;}
+  .dots_container {right: 20px;}
+  main .main_list {padding-top: 80px; padding-bottom: 95px; padding-left: 0; padding-right: 0;}
+  .visual_text p {font-size: 22px;}
+  .visual_text strong {font-size: 70px;}
+
+  /*header*/
+  header {height: 80px; padding: 0 20px;}
+  header.on .header_wrap {padding: 0 20px;}
+  header.on .header_wrap .header_logo {margin: 19px 0; margin-left: 20px;}
+  header.on .header_wrap .header_nav .gnb_menu > .gnb_list > a {padding: 19px 22px;}
+  header.on .header_wrap .header_nav span {top: 65px;}
+  header.on .header_wrap .header_nav ul > li .gnb_dropmenu {top: 65px;}
+  header.on .header_wrap .header_util {padding: 19px 0; padding-right: 20px;}
+  .header_wrap {padding: 0 ;}
+  .header_wrap .header_logo {margin: 26px 0; margin-left: 20px;}
+  .header_wrap .header_logo img {width: 135px; height: 24px;}
+  .header_wrap .header_nav span {top: 79px;}
+  .header_wrap .header_nav ul > li .gnb_dropmenu {top: 79px;}
+  .header_wrap .header_nav .gnb_menu > .gnb_list > a {padding: 26px 18px; font-size: 16px;}
+  .header_wrap .header_nav ul > li .gnb_dropmenu .dropmenu_list {font-size: 15px; padding: 6.5px 12px;} 
+  .header_wrap .header_nav ul > li .gnb_dropmenu li:first-child .dropmenu_list {padding-top: 19.5px;}
+  .header_wrap .header_nav ul > li .gnb_dropmenu li:last-child .dropmenu_list {padding-bottom: 26.5px;}
+  .header_wrap .header_util {padding: 25px 0; padding-right: 20px;}
+
+  /*main*/
+  .business_wrap {margin: 0 40px;}
+
+  main .business.main_list {padding: 0;}
+  main .visual {height: calc(100vh + 100px);}
+
+  .chemistry_back {margin-right: 0; width: 53%; height: 860px; bottom: -72px;}
+  .business_text .title {font-size: 30px;}
+  .business_text h2 span {font-size: 20px;}
+  .business_text h2 strong {font-size: 50px;}
+  .business_wrap .business_text p br {display: none;}
+  .ethanol {margin: -70px auto 0;}
+  .ethanol .business_text h2 {padding-top: 35px;}
+  .ethanol .business_img video {width: calc(100% + 5px);}
+  .chemistry {margin-top: -85px;}
+  .chemistry .business_text {padding-right: 4%;}
+  .colorpaste {margin: -51px 40px 0;}
+
+  .chemical_box {margin: 0 40px;}
+  .chemical_text {padding-top: 26px;}
+  .chemical_text p {padding: 10px 0 5px;}
+
+  .about.main_list {padding-bottom: 290px;}
+  .about_box {margin: 0 40px;}
+  .about_box .about_list > li .about_text {padding-top: 25px;}
+
+  main .info {margin: -80px auto 0; height: 650px;}
+  .info_box {margin: 0 40px;}
+  .info_box .recruit h3 {font-size: 42px; top: 133px; left: 10%;}
+  .info_box .recruit_info {padding: 76px 82px;}
+  .info_box .recruit_info strong {font-size: 23px;}
+  .info_box .recruit_background {width: 294px; left: 306px; height: 700px;}
+  .info_box .recruit_info {padding: 76px 10%;}
+  .info_box .corporate .corptext_box .corpbox_inner h3 {font-size: 42px;}
+
+  .news_box {margin: 0 40px;}
+  .news_list > li .news_content {width: 805px;}
+  .news_list > li .news_more {padding-left: 20px;}
+
+  .corp_box {height: 255px;}
+
+  /*footer*/
+  footer {padding: 50px 0 70px;}
+  .footer_nav {margin-bottom: 26px;}
+}
+/*----------------------1280px----------------------*/
+
+/*----------------------1110px----------------------*/
+@media screen and (max-width:1110px) {
+  /*header*/
+  header.on .header_wrap .header_nav span {top: 65px;}
+  header.on .header_logo {margin: 19px 0;}
+  header.on .header_wrap .header_nav .gnb_menu > .gnb_list > a {padding: 19px 20px;}
+  header.on .header_wrap .header_nav ul > li .gnb_dropmenu .dropmenu_list {padding: 6.5px 11px;}
+  header.on .header_util {padding: 19px 0;}
+
+  /*main*/
+  .chemistry_back {width: 47%;}
+  .ethanol .business_text {width: 48%;}
+  .chemistry .business_text {width: 48%;}
+
+  .news_list > li .news_content {width: 750px;}
+}
+/*----------------------1110px----------------------*/
+
+
+/*----------------------1023px----------------------*/
+@media screen and (max-width:1023px) {
+  /*common*/
+  .scroll_down {width: 50px; height: 50px;}
+  main .main_list {padding-top: 60px; padding-bottom: 75px;}
+  h3 {padding-bottom: 38px;font-size: 40px;}
+  .visual_text strong {font-size: 55px;}
+  .dots_container {display: none;}
+  .btn_view {margin-top: 25px; font-size: 15px; padding: 18px;}
+
+  /*header*/
+  header {height: 70px; padding: 0; top: 0;}
+  .header_wrap {display: none;}
+  .m_header {display: block;}
+
+  /*main*/
+  .business_wrap {margin: 0 3%;}
+  .chemistry_back {display: none;}
+  .business_text .title {padding-bottom: 25px;font-size: 26px;}
+  .business_text h2 span {font-size: 18px;}
+  .business_text h2 strong {margin-left: 0; font-size: 38px;}
+  .business_text p {font-size: 15px;}
+
+  .chemistry {margin-top: -60px;}
+  .chemistry .business_text * {color: var(--main-color2);}
+  .chemistry .business_text {padding-top: 0;}
+  .chemistry .business_text p {color: var(--text2-color);}
+  .chemistry .btn_view {border: 1px solid var(--main-color2);}
+  .chemistry .business_text .btn_view::before, .chemistry .business_text .btn_view::after {background: var(--main-color2);}
+  .chemistry .business_text .btn_view:hover span {color: var(--main-color3);}
+
+  .colorpaste {margin: -40px 3% 0;}
+  .colorpaste_wrap {margin: 0 3%;}
+  .colorpaste .business_text {margin: 0; padding: 0 2%;}
+
+  /* .chemical.main_list {padding-left: 3%; padding-right: 3%;} */
+  .chemical_box .chemical_list {margin: 0 -8px;}
+  .chemical_box .chemical_list > li {margin: 0 8px; width: calc(100%/3 - 16px);}
+  .chemical_box .chemical_list > li img {height: auto;}
+  .chemical_text strong {font-size: 21px;}
+  .chemical_text p {padding-top: 5px; font-size: 15px;}
+  .chemical .btn_view {margin-top: 15px;}
+
+  .about.main_list {padding-bottom: 255px;}
+  .about_box {margin: 0 3%;}
+  .about_box .about_list > li {padding: 0 15px;}
+  .about_box .about_list > li img {width: 70px; height: auto;}
+  .about_box .about_list > li strong {font-size: 17px;}
+  .about_box .about_list > li p {font-size: 15px;}
+
+  .info_box {margin: 0 3%;}
+  .info_box .recruit h3 {font-size: 34px; top: 123px;}
+  .info_box .recruit_background {width: 290px; left: 213px;}
+  .info_box .recruit_info strong {font-size: 20px;}
+  .info_box .recruit_info p {margin-top: 10px; font-size: 15px;}
+  .info_box .recruit_info span {padding-bottom: 22px;}
+  .info_box .corporate .corptext_box .corpbox_inner p {font-size: 15px}
+  .info_box .corporate .corptext_box .corpbox_inner h3 {font-size: 34px; padding-top: 5px;}
+
+  .news_box {margin: 0 3%;}
+  .news_list > li .news_time {width: 120px;}
+  .news_list > li .news_time p {font-size: 40px;}
+  .news_list > li .news_time span {font-size: 16px;}
+  .news_list > li .news_content {width: 720px;}
+  .news_list > li .news_content .title span {padding: 0 15px; margin-right: 12px; font-size: 14px; line-height: 26px;}
+  .news_list > li .news_content p {font-size: 15px;}
+  .news_list > li .news_more {padding-left: 0;}
+  .news_list > li .news_more .info_btn {width: 38px; height: 38px;}
+  .news_list > li .news_more .info_btn::after {top: 15px; left: 13px;}
+
+  .notice_box {margin: 0 3%;}
+  .notice_box .stock {padding-right: 23px;}
+  .notice_box .ir {padding-left: 23px;}
+  .notice_box .stock ul {height: 30px;}
+  .notice_box .stock li:first-child {width: 35%;}
+  .notice_box .stock li:first-child p {font-size: 35px;}
+  .notice_box .stock li:last-child * {font-size: 15px;}
+  .notice_box .stock li:last-child p + p {padding-left: 20px;}
+  .notice_box .ir ul li p {font-size: 15px;}
+
+  .corp_box{height: 210px;}
+  .corp_box .corp_inner .office_inner p {font-size: 14px;}
+  .corp_box .corp_inner .office_inner span {font-size: 26px;}
+
+
+  /*footer*/
+  footer {padding: 5% 0;}
+  .footer_inner {margin: 0 3%;}
+  .footer_nav {margin-bottom: 0; padding-bottom: 16px;}
+  .footer_nav ul {font-size: 0; line-height: 1; text-align: center;}
+  .footer_nav ul > li {float: none; display: inline-block; margin-bottom: 12px;}
+  .footer_nav ul > li + li {margin-left: 16px;}
+  .family {width: 100%; padding: 26px 0; position: static; text-align: center;  font-size: 0; line-height: 1;}
+  .family a {display: inline-block; margin-bottom: 0; padding-right: 30px; position: relative;}
+  .family a + a {margin-top: 0;}
+  .family .family_kcna .footer_text, .family .family_enf .footer_text {margin-left: 10px;}
+  .family a.family_kcna::after {content: ''; width: 1px; height: 100%; position: absolute; top: 0; right: 15px; background: rgba(255, 255, 255, 0.1);}
+  .footer_info {text-align: center;}
+  .copyright {text-align: center; padding-top: 10px;}
+
+}
+/*----------------------1023px----------------------*/
+
+
+
+/*----------------------800px----------------------*/
+@media screen and (max-width:800px) {
+  .business_text h2 {padding-top: 0;}
+
+  .info_box .recruit_background {display: none;}
+  .notice_box > div {width: 100%; height: auto;}
+  .notice_box .stock {padding-right: 0; padding-bottom: 20px; border-right: none; border-bottom: 1px solid #ddd;}
+  .notice_box .ir {padding-left: 0; padding-top: 24px;}
+
+  .news_list > li .news_content {width: 565px;}
+}
+/*----------------------800px----------------------*/
+
+
+/*----------------------768px----------------------*/
+@media screen and (max-width:768px) {
+  .business_wrap {margin: 0 20px;}
+  .colorpaste {margin: -50px 20px 0;}
+  .chemical_box {margin: 0 20px;}
+  .about_box {margin: 0 20px;}
+  .info_box {margin: 0 20px;}
+  .news_box {margin: 0 20px;}
+  .notice_box {margin: 0 20px;}
+  .scroll_down {bottom: 85px;}
+
+  /*header*/
+  header {height: 60px;}
+  .m_header .m-logo {width: 120px; height: 21px; left: 20px; top: 19px;}
+  .m_header .m-menu_btn {top: 22px; right: 20px;}
+
+
+  /*main*/
+  main .visual {height: calc(100vh + 60px);}
+  .colorpaste_wrap {margin: 0 20px;}
+
+  /*footer*/
+  .footer_inner {margin: 0 20px;}
+  .footer_nav ul > li a {font-size: 14px;}
+  .footer_nav ul > li + li {margin-left: 14px;}
+  .family {padding: 30px 0;}
+  .family a {width: 50%; max-width: 140px; padding-right: 0;}
+  .family a.family_kcna::after {right: 5px;}
+  .family .family_kcna .footer_text, .family .family_enf .footer_text {margin-top: 12px; margin-left: auto;}
+  .footer_info span + span {padding-left: 8px;}
+}
+/*----------------------768px----------------------*/
+
+
+/*----------------------767px----------------------*/
+@media screen and (max-width:767px) {
+  main .main_list {padding: 7% 0 8%;}
+  h3 {padding-bottom: 25px; font-size: 32px;}
+  .btn_view {margin-top: 20px; width: 140px; padding: 16px; font-size: 14px;}
+
+  .visual_text p {font-size: 16px;}
+  .visual_text strong {font-size: 38px;}
+
+  .business_wrap {margin: 0;}
+  .business_text .title {font-size: 22px; padding-bottom: 20px;}
+  .business_text h2 span {font-size: 14px; line-height: 1.6;}
+  .business_text h2 strong {font-size: 32px;}
+  .ethanol {margin: -33px auto 0;}
+  .ethanol .business_text {width: 52%; padding: 20px 25px 0 20px;}
+  .ethanol .business_img {height: 448px;}
+  .chemistry {margin-top: 25px;}
+  .chemistry .business_text {width: 52%; padding: 0 20px 0 25px;}
+  .colorpaste {margin: -33px 0 0; padding-top: calc(12% + 33px); padding-bottom: 12%;}
+  .colorpaste .business_text {padding: 0;}
+
+  .chemical_box .chemical_list {margin: 0 -5px;}
+  .chemical_box .chemical_list > li {margin: 0 5px; width: calc(100%/3 - 10px);}
+  .chemical_text p {font-size: 14px; line-height: 1.6;}
+  .chemical_box .chemical_list .btn_view span {padding-right: 30px;}
+
+  .about.main_list {padding-bottom: 215px;}
+  .about_box .about_list > li img {width: 66px;}
+  .about_box .about_list > li strong {font-size: 15px;}
+  .about_box .about_list > li p {padding-top: 10px; font-size: 14px; line-height: 1.6;}
+
+  main .info {height: 490px;}
+  .info_box .recruit h3 {font-size: 30px;}
+  .info_box .recruit_info {padding: 20px 8%;}
+  .info_box .recruit_info strong {font-size: 17px;}
+  .info_box .recruit_info p {font-size: 14px; line-height: 1.6; padding-top: 0;}
+  .info_box .recruit_info span {padding: 5px 0 15px; font-size: 13px;}
+  .info_btn {width: 28px; height: 28px;}
+  .info_btn::after {width: 4px; height: 4px; top: 11px; left: 10px;}
+  .info_box .corporate .corptext_box .corpbox_inner p {font-size: 14px; line-height: 1.6;}
+  .info_box .corporate .corptext_box .corpbox_inner h3 {padding-bottom: 10px; font-size: 28px;}
+
+  .news_list > li {position: relative; display: block;}
+  .news_list > li:hover {border-bottom: 1px solid #DDDDDD;}
+  .news_list > li .news_time {width: auto; padding: 0; position: absolute; left: 0; bottom: 20px;}
+  .news_list > li .news_time p, .news_list > li .news_time span {display: none;}
+  .news_list > li .news_time time::after {content: attr(datetime); font-size: 14px; font-weight: 400; color: var(--text2-color);}
+  .news_list > li .news_content {padding: 20px 0 50px; width: 709px;}
+  .news_list > li .news_content .title span {font-size: 12px; line-height: 23px; padding: 0 9px;}
+  .news_list > li .news_content .title strong {font-size: 17px; max-width: calc(100% - 60px);}
+  .news_list > li .news_content p {font-size: 14px;}
+  .news_list > li .news_more {display: none;}
+  .news .btn_view span::before {left: 13px;}
+
+  .notice_box > div strong {padding-bottom: 10px; font-size: 17px;}
+  .notice_box .stock li:first-child p {font-size: 30px;}
+  .notice_box .stock li:last-child * {font-size: 14px; line-height: 1.5;}
+  .notice_box .ir ul li p {font-size: 14px; font-weight: 200;}
+  .notice_box .ir ul li .time {font-size: 14px; font-weight: 200;}
+  .notice_box .ir ul li a {padding-right: 85px; padding-top: 5px; padding-bottom: 5px; line-height: 22px;}
+
+  .corp_box .corp_inner .office_inner p {font-size: 13px;}
+  .corp_box .corp_inner .office_inner span {font-size: 22px;}
+}
+/*----------------------767px----------------------*/
+
+
+/*----------------------600px----------------------*/
+@media screen and (max-width:600px) {
+  /*main*/
+  main .visual {height: calc(100vh + 40px);}
+  .scroll_down {bottom: 60px;}
+
+  main .business.main_list {padding: 7% 0 0;}
+  .business_wrap {margin: 20px 20px;}
+  .ethanol .business_text {width: 100%; padding: 0;}
+  .business_text h2 span {padding-top: 20px;}
+  .business_text .title {display: inline-block; width: 100%; padding-bottom: 0; font-size: 32px; text-align: center;}
+  .ethanol, .chemistry {display: flex; flex-direction: column; flex-wrap: wrap; margin-top: 0; margin-bottom: 30px;}
+  .ethanol .business_img {width: 100%; height: 336px; position: absolute; top: 60px; overflow: hidden;}
+  .ethanol .business_text h2 {padding-top: 0; margin-top: 347px;}
+  .ethanol .business_img video {position: absolute; top: 0; left: 0;}
+  .chemistry .business_img {width: 100%; height: 336px; overflow: hidden;}
+  .chemistry .business_img img {position: absolute; top: -20%; left: 0;}
+  .chemistry .business_text {width: 100%; padding: 20px 0 0 0 ;}
+  .chemistry .business_text h2 {padding: 0;}
+  .colorpaste {padding-top: 12%; margin-top: 0;}
+  .colorpaste .business_text br {display: none;}
+
+  .chemical_box .chemical_list > li {width: 100%; margin-bottom: 30px;}
+  .chemical_box .chemical_list > li img {width: 560px; height: 336px; object-fit: cover;}
+  
+  .about.main_list {padding-bottom: 100px;}
+  .about_box .about_list {display: block; padding: 0 15px;}
+  .about_box .about_list > li {width: 100%; display: block; float: none; border: none; padding: 0 0 35px 0;}
+  
+  main .info {height: 840px;}
+  .info_box .recruit {width: 100%; height: 50%;}
+  .info_box .corporate {width: 100%; height: 50%;}
+  .info_box .recruit h3 {top: 88px; left: 20px;}
+  .info_box .recruit_info {padding: 20px;}
+  .info_box .corporate .corptext_box .corpbox_inner {padding: 0 82px;}
+
+  .news_list > li .news_content {width: 100%;}
+
+  .footer_info p:first-child span:last-child {display: block;}
+}
+/*----------------------600px----------------------*/
+
+
+/*----------------------480px----------------------*/
+@media screen and (max-width:480px) {
+  main .main_list {padding: 10% 0 12%;}
+  main .business.main_list {margin: 0;}
+  .business_wrap {margin: 0 15px;}
+  h3 {font-size: 28px;}
+
+  .visual_text p {font-size: 16px;}
+  .visual_text strong {font-size: 30px;}
+
+  .business_text .title {font-size: 28px;}
+  .business_text h2 span {font-size: 15px;}
+  .business_text h2 strong {font-size: 28px; padding: 5px 0;}
+  .colorpaste .business_text {width: 100%;}
+
+  .chemical_box .chemical_list > li img {width: 449px; height: 269px;}
+
+  .info_box .corporate .corptext_box .corpbox_inner {padding: 0;}
+
+  .btn_view {padding: 14px; font-size: 13px;}
+
+  .notice_box .stock li:first-child p {font-size: 28px;}
+  .notice_box .stock li:last-child * {font-size: 12px;}
+  .notice_box .stock li:last-child p + p {padding-left: 10px;}
+  .notice_box .ir ul li a p {padding-right: 90px;}
+
+  .corp_box .corp_inner .office_inner span {padding-top: 4px; font-size: 18px;}
+
+  .footer_nav {padding-bottom: 7px;}
+  .footer_nav ul > li a {font-size: 13px;}
+  .footer_info span {font-size: 12px;}
+  .copyright {font-size: 11px;}
+}
+/*----------------------480px----------------------*/
+
+
+/*----------------------345px----------------------*/
+@media screen and (max-width:345px) {
+  .visual_text {width: 100%;}
+  .visual_text p {font-size: 14px;}
+  .main_visual_item h2 {font-size: 27px;}
+
+  .footer_info p:first-child span:nth-child(2) {display: inline-block;}
+  .footer_info p:first-child span:last-child {display: inline-block;}
+  .footer_info p:last-child span:nth-child(2) {display: inline-block;}
+}
+/*----------------------345px----------------------*/
