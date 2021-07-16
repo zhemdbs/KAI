@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/stylesheet.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <!-- <script src="//code.jquery.com/jquery-3.3.1.min.js"></script> -->
+  
+</head>
+<body>
+  <div id="wrap">
+    <div id="skip_nav">
+      <a href="#main_business" >본문 바로가기</a>
+    </div>
+    <header><!--header-->
+      <div class="header_wrap">
+        <h1 class="header_logo"><a href=""><img src="./img/logo.svg" alt="한국알콜산업KAI"><span class="blind">한국알콜산업KAI</span></a></h1>
+        <nav class="header_nav">
+          <span></span>
+          <ul class="gnb_menu">
+            <li class="gnb_list"><a href="">회사소개</a>
+              <ul class="gnb_dropmenu">
+                <li><a href="" class="dropmenu_list">회사개요</a></li>
+                <li><a href="" class="dropmenu_list">CEO 인사말</a></li>
+                <li><a href="" class="dropmenu_list">가치체계</a></li>
+                <li><a href="" class="dropmenu_list">연구소</a></li>
+                <li><a href="" class="dropmenu_list">관계사</a></li>
+                <li><a href="" class="dropmenu_list">사업장</a></li>
+              </ul>
+            </li>
+            <li class="gnb_list"><a href="">제품소개</a>
+              <ul class="gnb_dropmenu">
+                <li><a href="" class="dropmenu_list">제품정보</a></li>
+                <li><a href="" class="dropmenu_list">주정</a></li>
+                <li><a href="" class="dropmenu_list">석유화학</a></li>
+                <li><a href="" class="dropmenu_list">Color Paste</a></li>
+                <li><a href="" class="dropmenu_list">제품문의</a></li>
+              </ul>
+            </li>
+            <li class="gnb_list"><a href="">지속가능경영</a>
+              <ul class="gnb_dropmenu">
+                <li><a href="" class="dropmenu_list">정보경영</a></li>
+                <li><a href="" class="dropmenu_list">환경경영</a></li>
+                <li><a href="" class="dropmenu_list">품질경영</a></li>
+              </ul>
+            </li>
+            <li class="gnb_list"><a href="">투자정보</a>
+              <ul class="gnb_dropmenu">
+                <li><a href="" class="dropmenu_list">경영정보</a></li>
+                <li><a href="" class="dropmenu_list">주가정보</a></li>
+                <li><a href="" class="dropmenu_list">재무정보</a></li>
+                <li><a href="" class="dropmenu_list">IR자료실</a></li>
+              </ul>
+            </li>
+            <li class="gnb_list"><a href="">홍보센터</a>
+              <ul class="gnb_dropmenu">
+                <li><a href="" class="dropmenu_list">KAI소식</a></li>
+                <li><a href="" class="dropmenu_list">CI소개</a></li>
+                <li><a href="" class="dropmenu_list">사회공헌</a></li>
+              </ul>
+            </li>
+            <li class="gnb_list"><a href="">인재채용</a>
+              <ul class="gnb_dropmenu">
+                <li><a href="" class="dropmenu_list">인사제도</a></li>
+                <li><a href="" class="dropmenu_list">채용공고</a></li>
+                <li><a href="" class="dropmenu_list">채용문의</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="header_util">
+          <div class="lang">
+            <a href="" class="on">KOR</a>
+            <a href="">ENG</a>
+            <a href="">CHN</a>
+          </div>
+          <div class="search">
+            <a href=".visual"><span class="blind">search</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="m_header">
+        <h1 class="m-logo"><img src="./img/logo 2.png" alt="한국알콜산업KAI"><span class="blind">한국알콜산업KAI</span></h1>
+        <!-- <span class="m-menu_btn" onclick="openNav()">&#9776;</span> -->
+        <div class="m-menu_btn" onclick="clickOpen()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div class="m-menu_close" onclick="clickClose()">
+          <span class="blind">close</span>
+        </div>
+        <div class="m-menu_overlay"></div>
+        <div class="m-menu_container">
+          <div class="m-header_util">
+            <div class="lang">
+              <a href="" class="on">KOR</a>
+              <a href="">ENG</a>
+              <a href="">CHN</a>
+            </div>
+            <div class="search">
+              <a href=".visual"><span class="blind">search</span></a>
+            </div>
+          </div>
+          <div class="m-container_inner">
+            <nav class="m-menu_nav">
+              <ul class="m-menu">
+                <li><a href=""><span>회사소개</span></a></li>
+                <li><a href=""><span>제품소개</span></a></li>
+                <li><a href=""><span>지속가능경영</span></a></li>
+                <li><a href=""><span>투자정보</span></a></li>
+                <li><a href=""><span>홍보센터</span></a></li>
+                <li><a href=""><span>인재채용</span></a></li>
+              </ul>
+            </nav>
+            <nav class="m-menu_depth_nav">
+              <ul class="m-menu_depth">
+                <li class="m-depth_item">
+                  <ul class="m-depth_sub">
+                    <li><a href=""><span>회사개요</span></a></li>
+                    <li><a href=""><span>CEO 인사말</span></a></li>
+                    <li><a href=""><span>가치체계</span></a></li>
+                    <li><a href=""><span>연구소</span></a></li>
+                    <li><a href=""><span>관계사</span></a></li>
+                    <li><a href=""><span>사업장</span></a></li>
+                  </ul>
+                </li>
+                <li class="m-depth_item">
+                  <ul class="m-depth_sub">
+                    <li><a href=""><span>제품정보</span></a></li>
+                    <li><a href=""><span>주정</span></a></li>
+                    <li><a href=""><span>석유화학</span></a></li>
+                    <li><a href=""><span>Color Paste</span></a></li>
+                    <li><a href=""><span>제품문의</span></a></li>
+                  </ul>
+                </li>
+                <li class="m-depth_item">
+                  <ul class="m-depth_sub">
+                    <li><a href=""><span>정도경영</span></a></li>
+                    <li><a href=""><span>환경경영</span></a></li>
+                    <li><a href=""><span>품질경영</span></a></li>
+                  </ul>
+                </li>
+                <li class="m-depth_item">
+                  <ul class="m-depth_sub">
+                    <li><a href=""><span>경영정보</span></a></li>
+                    <li><a href=""><span>주가정보</span></a></li>
+                    <li><a href=""><span>재무정보</span></a></li>
+                    <li><a href=""><span>IR자료실</span></a></li>
+                  </ul>
+                </li>
+                <li class="m-depth_item">
+                  <ul class="m-depth_sub">
+                    <li><a href=""><span>KAI소식</span></a></li>
+                    <li><a href=""><span>CI소개</span></a></li>
+                    <li><a href=""><span>사회공헌</span></a></li>
+                  </ul>
+                </li>
+                <li class="m-depth_item">
+                  <ul class="m-depth_sub">
+                    <li><a href=""><span>인사제도</span></a></li>
+                    <li><a href=""><span>채용공고</span></a></li>
+                    <li><a href=""><span>채용문의</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <nav class="m-addition_nav">
+            <ul class="m-addition_menu">
+              <li><a href=""><span>사이트맵</span></a></li>
+              <li class="competent"><a href=""><span>정도경영</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- <div class="search_popup">
+        <div class="search_popup_inner">
+          <form action="" autocomplete="off">
+            <label for="search_field" class="search_label">검색어를 입력해주세요</label>
+            <div class="search_input">
+              <input type="text">
+              <button type="submit"><span class="blind">search</span></button>
+            </div>
+          </form>
+          <a href="" class="search_close"></a>
+        </div>
+      </div> -->
+    </header>
+
+    <main><!--main-->
+      <div class="visual"><!--visual-->
+        <ul class="visual_slider">
+          <li class="slide">
+            <img src="./img/main-visual-01-motion.jpg" alt="편리하고 행복한 케미컬">
+            <div class="visual_text">
+              <p class="on">편리하고 행복한 케미컬</p>
+              <strong class="wave on">Materials for better world</strong>
+            </div>
+          </li>
+          <li class="slide">
+            <img src="./img/main-visual-02.jpg" alt="기술과 경험의 융합, 미래를 위한 변화">
+            <div class="visual_text">
+              <p>기술과 경험의 융합, 미래를 위한 변화</p>
+              <strong class="wave">New Innovation</strong>
+            </div>
+          </li>
+          <li class="slide">
+            <img src="./img/main-visual-03-v2.jpg" alt="혁신적 제품개발을 통한 그린케미컬">
+            <div class="visual_text">
+              <p>혁신적 제품개발을 통한 그린케미컬의</p>
+              <strong class="wave">Asia leader</strong>
+            </div>
+          </li>
+        </ul>
+        <div class="dots_container">
+          <div class="pager_wrap">
+            <div class="pagers">
+              <div class="pager on">
+                <button>1</button>
+              </div>
+              <div class="pager">
+                <button>2</button>
+              </div>
+              <div class="pager">
+                <button>3</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#main_business" class="scroll_down">
+          <span class="blind">scroll_down</span>
+        </a>
+      </div>
+
+      <div class="business main_list" id="main_business"><!--business-->
+        <div class="business_wrap">
+          <span class="chemistry_back"></span>
+          <div class="ethanol">
+            <div class="business_text">
+              <strong class="title">BUSINESS</strong>
+              <h2>
+                <span>주정</span>
+                <strong>Ethanol</strong>
+              </h2>
+              <p>30여 년간의 노하우를 바탕으로 <br/> 고순도, 고품질의 주정을 생산합니다.</p>
+              <a href="" class="btn_view"><span>VIEW MORE</span></a>
+            </div>
+            <div class="business_img">
+              <video src="./img/fluid-2.mp4" muted autoplay></video>
+            </div>
+          </div>
+          <div class="chemistry">
+            <div class="business_img"><img src="./img/main-business-02.jpg" alt="석유화학"></div>
+            <div class="business_text">
+              <h2>
+                <span>석유화학</span>
+                <strong>Chemistry</strong>
+              </h2>
+              <p>국내 유일의 초산에틸, 초산부틸 생산업체로 <br/> 우수한 품질로 국내시장을 선도합니다.</p>
+              <a href="" class="btn_view"><span>VIEW MORE</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="colorpaste">
+          <div class="colorpaste_wrap">
+            <div class="business_text">
+              <h2>
+                <span>컬러페이스트</span>
+                <strong>Color paste</strong>
+              </h2>
+              <p>국내 최초 개발에 성공하여 <br/> 디스플레이의 핵심소재로 사용되고 있습니다.</p>
+              <a href="" class="btn_view"><span>VIEW MORE</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chemical main_list"><!--business-->
+        <h3>Green Chemical KAI</h3>
+        <div class="chemical_box">
+          <ul class="chemical_list">
+            <li>
+              <img src="./img/main-chemical-01.jpg" alt="R&D연구소">
+              <div class="chemical_text">
+                <strong>R&D연구소</strong>
+                <p>새로운 성장동력 확보를 위한 적극적인 <br/> 연구개발 활동을 진행하고 있습니다.</p>
+              </div>
+            </li>
+            <li>
+              <img src="./img/main-chemical-02.jpg" alt="환경안전">
+              <div class="chemical_text">
+                <strong>환경안전</strong>
+                <p>모든 제품 생산 및 서비스 활동에서 환경 영향을 <br/> 최소화하고 무재해 한국알콜산업이 되도록 <br/> 하겠습니다.</p>
+              </div>
+            </li>
+            <li>
+              <img src="./img/main-chemical-03.jpg" alt="정도경영">
+              <div class="chemical_text">
+                <strong>정도경영</strong>
+                <p>정도경영을 바탕으로 성실한 기업 활동을 통한 <br/>  최고의 품질과 서비스를 지속적으로 제공합니다.</p>
+              </div>
+              <a href="" class="btn_view"><span>SITE VIEW</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="about main_list"><!--about-->
+        <h3>About KAI</h3>
+        <div class="about_box">
+          <ul class="about_list">
+            <li>
+              <img src="./img/about-01.svg" alt="고품질의 정제주정 생산">
+              <div class="about_text">
+                <strong>고품질의 정제주정 생산</strong>
+                <p>30여 년간의 노하우를 바탕으로 고순도, 고품질의 정제주정만을 공급합니다.</p>
+              </div>
+            </li>
+            <li>
+              <img src="./img/abou-02.svg" alt="국내유일의 공업용 에탄올 생산">
+              <div class="about_text">
+                <strong>국내유일의 공업용 에탄올 생산</strong>
+                <p>우수한 품질과 원가절감을 위한 끊임없는 연구 개발로 공업용 에탄올 시장을 이끌어갑니다.</p>
+              </div>
+            </li>
+            <li>
+              <img src="./img/about-03.svg" alt="성장을 위한 지속적인 투자">
+              <div class="about_text">
+                <strong>성장을 위한 지속적인 투자</strong>
+                <p>안정적인 사업구조에 안주하지 않고 제품군의 다양화를 위한 노력을 합니다.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info main_list"><!--info-->
+        <div class="info_box">
+          <div class="recruit">
+            <h3>Recruit</h3>
+            <div class="recruit_info">
+              <strong>채용정보</strong>
+              <p>한국알콜산업㈜ 본사 자금팀(자금관리) 경력 채용</p>
+              <span>2020.09.23 ~ 2020.10.11</span>
+              <a href="" class="info_btn"><span class="blind">more</span></a>
+            </div>
+            <!-- <div class="recruit_background"></div> -->
+          </div>
+          <div class="recruit_background"></div>
+          <div class="corporate">
+            <div class="corptext_box">
+              <div class="corpbox_inner">
+                <p>한국알콜산업 사회공헌</p>
+                <h3>Corporate Social Responsibility</h3>
+                <a href="" class="info_btn"><span class="blind">more</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="news main_list"><!--news-->
+        <h3>NEWS</h3>
+        <div class="news_box">
+          <ul class="news_list">
+            <li>
+              <div class="news_time">
+                <time datetime="2021-03-31"></time>
+                <p>31</p>
+                <span>2021.03</span>
+              </div>
+              <div class="news_content">
+                <div class="title">
+                  <span>공지</span>
+                  <strong>한국알콜산업 2020년 결산보고</strong>
+                </div>
+                <p>제37기 결 산 공 고 연 결 재 무 상 태 표 (2020년 12월 31일 현재) 단위 : 원 자산 Ⅰ. 유동자산 177,417,249,204 1. 현금및현금성자산 72,881,904,876 2. 매출채권및기타채권 72,158,865,958 단기매출채권 72,450,765,626 대손충당금 △1,420,482,750 단기미수금 1,020,626,439 대손충당금 △142,257,000 단기미수수익 21,346,955 선급금 86,052,328 대손충당금 △83,500,000 단기선급비용 226,314,360 3. 재고자산 20,999,197,670 상품 28,690,141 제품 9,111,055,729 평가충당금 △177,658,753 원재료 […]</p>
+              </div>
+              <div class="news_more">
+                <a href="" class="info_btn"></a>
+              </div>
+            </li>
+            <li>
+              <div class="news_time">
+                <time datetime="2019-03-08"></time>
+                <p>08</p>
+                <span>2019.03</span>
+              </div>
+              <div class="news_content">
+                <div class="title">
+                  <span>공지</span>
+                  <strong>한국알콜산업 제 35기 정기주주총회 개최 안내</strong>
+                </div>
+                <p>한국알콜산업 제 35기 정기주주총회 개최 안내 올 한해에도 더욱 번창하시기를 앙망합니다. 당사 정관 제19조에 의거 제35기 (2018. 1. 1 ～ 2018. 12. 31) 정기주주총회를 아래와 같이 개최하오니 참석하여 주시기 바랍니다. 1. 개최일시2019년 3월 26일 (화) 오전 08:30 2. 개최장소경기도 용인시 기흥구 탑실로35번길 14(공세동) 당사 대회의실 3. 회의 목적사항가. 보고사항 : 감사보고, 영업보고, 내부회계운영실태보고 나. 부의안건 […]</p>
+              </div>
+              <div class="news_more">
+                <a href="" class="info_btn"></a>
+              </div>
+            </li>
+          </ul>
+          <a href="" class="btn_view"><span>LIST</span></a>
+        </div>
+      </div>
+
+      <div class="notice main_list"><!--notice-->
+        <div class="notice_box">
+          <div class="stock">
+            <strong>주가정보</strong>
+            <ul>
+              <li><p>14,850</p></li>
+              <li>
+                <span>KOSPI</span>
+                <p>3252.13</p>
+                <p class="text">+2.81(+0.06%)</p>
+              </li>
+            </ul>
+          </div>
+          <div class="ir">
+            <strong>IR공지</strong>
+            <ul>
+              <li><a href="">
+                <p>[공시자료] 분기보고서 (2021.03)</p>
+                <time datetime="2021-05-17" class="time">2021-05-17</time>
+              </a></li>
+              <li><a href="">
+                <p>[공시자료] 주식등의대량보유상황보고서(일반)</p>
+                <time datetime="2021-04-07" class="time">2021-04-07</time>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="corp main_list"><!--corp-->
+        <div class="corp_box">
+          <div class="corp_inner">
+            <div class="headoffice_img corp_back"></div>
+            <div class="office_inner">
+              <a href="">
+                <p>본사</p>
+                <span>GIHEUNG OFFICE</span>    
+              </a>
+            </div>
+          </div>
+          <div class=" corp_inner">
+            <div class="branchoffice_img corp_back"></div>
+            <div class="office_inner">
+              <a href="">
+                <P>지점/공장</P>
+                <span>ULSAN FACTORY</span>  
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer><!--footer-->
+      <!-- <a href="#" class="go_top"></a> -->
+      <div class="footer_inner">
+        <nav class="footer_nav">
+          <ul>
+            <li><a href="">정도경영</a></li>
+            <li><a href="">인재채용</a></li>
+            <li><a href="">사이트맵</a></li>
+            <li><a href="">개인정보 취급(처리)방침</a></li>
+          </ul>
+        </nav>
+        <div class="family">
+          <a href="" class="family_kcna">
+            <img src="./img/footer-kcna-pic.png" alt="케이씨엔에이로고" class="footer_logo">
+            <img src="./img/footer-kcna-txt.png" alt="케이씨엔에이텍스트" class="footer_text">
+          </a>
+          <a href="" class="family_enf">
+            <img src="./img/footer-enf-pic.png" alt="이엔에프테크놀로지로고" class="footer_logo">
+            <img src="./img/footer-enf-txt.png" alt="이엔에프테크놀로지텍스트" class="footer_text">
+          </a>
+        </div>
+        <div class="footer_info">
+          <p>
+            <span>기흥본사 : 경기도 용인시 기흥구 탑실로 35번길 14</span>
+            <span>TEL / <a href="">031 - 881 - 8000</a></span>
+            <span>FAX / 031 - 282 - 6851</span>
+          </p>
+          <p>
+            <span>울산지점/공장 : 울산광역시 남구 상개로 66</span>
+            <span>TEL / <a href="">052 - 259 - 4700</a></span>
+            <span>FAX / 052 - 259 - 4759</span>
+          </p>
+        </div>
+        <p class="copyright">COPYRIGHT (C) 2017 KAI CO., LTD. ALL RIGHTS RESERVED.</p>
+      </div>
+    </footer>
+
+  </div>
+
+<script>
+
+const htmlElem = document.querySelector('html');
+const headerElem = document.querySelector('header');
+const openNav = document.querySelector('.m_header');
+const openSub = document.querySelector('.m-menu_btn');
+const closeSub = document.querySelector('.m-menu_close');
+// const subDepth = document.querySelectorAll('.m-menu > li');
+
+openSub.addEventListener('click', clickOpen)
+closeSub.addEventListener('click', clickClose)
+// subDepth.addEventListener('click', openDepth)
+
+var current = 0;
+var slides = document.querySelectorAll('.slide');
+var dot = document.querySelectorAll('.pager');
+var wave = document.querySelectorAll('.wave');
+var fadeIn = document.querySelectorAll('.visual_text > p');
+window.addEventListener('scroll', scrollWork);
+
+function scrollWork() {
+    let sTop = htmlElem.scrollTop;
+    if (sTop > 50) {
+        headerElem.classList.add('on');
+    } else if (sTop < 50) {
+        headerElem.classList.remove('on');
+    }
+    if (sTop > 550) {
+        headerElem.classList.add('active');
+    } else if (sTop < 550) {
+        headerElem.classList.remove('active');
+    }
+    console.log(sTop)
+}
+
+//슬라이드
+setInterval(function() {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.opacity = 0;
+    fadeIn[i].classList.remove('on');
+    dot[i].classList.remove('on');
+    wave[i].classList.remove('on');
+    }
+  current = (current != slides.length -1) ? current + 1 : 0;
+  slides[current].style.opacity = 1;
+  fadeIn[current].classList.add('on');
+  dot[current].classList.add('on');
+  wave[current].classList.add('on');
+}, 6000);
+//슬라이드 텍스트
+waveText();
+function waveText() {
+  let anis = document.querySelectorAll(".wave");
+
+  anis.forEach(function (item) {
+    let delayTime = 0;
+    let aniTexts = item.textContent;
+    item.textContent = "";
+
+    for (let i = 0; i < aniTexts.length; i++) {
+      let aniText = aniTexts.substring(i, i + 1);
+      let newSpan = document.createElement("span");
+      if (aniText === " ") {
+        aniText = "&nbsp;";
+      }
+      newSpan.innerHTML = aniText;
+      delayTime = delayTime + (0.7 / aniTexts.length);
+      newSpan.style.animationDelay = delayTime + "s";
+      item.appendChild(newSpan);
+    }
+  });    
+}
+
+//m-openNav 
+function clickOpen() {
+  // console.log('찍힘');
+  openNav.classList.add('on');
+}
+function clickClose() {
+  // console.log('찍');
+  openNav.classList.remove('on');
+}
+
+//depthNav
+// function openDepth() {
+//   subDepth.classList.add('on');
+// }
+
+
+//효과
+
+</script>
+</body>
+</html>
