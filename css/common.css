@@ -5,7 +5,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,time,figure,article,
 	margin: 0;
 	padding: 0;
 	border: 0;
-	outline: 0;
 	font-weight: inherit;
 	font-style: inherit;
 	vertical-align: baseline;
@@ -24,8 +23,8 @@ h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquo
 a {font-size: 16px; text-decoration: none;}
 strong {font-weight: 600;}
 
-ol,ul {list-style: none;}
-ol::after,ul::after {content: ''; clear: both;}
+ul {list-style: none;}
+ul::after {content: ''; clear: both;}
 
 img {vertical-align: top;}
 
