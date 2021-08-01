@@ -4,21 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>한국알콜산업</title>
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/stylesheet.css">
   <link rel="stylesheet" href="./css/responsive.css">
-  <!-- <script src="//code.jquery.com/jquery-3.3.1.min.js"></script> -->
   
 </head>
 <body>
   <div id="wrap">
-    <div id="skip_nav">
-      <a href="#main_business" >본문 바로가기</a>
-    </div>
+    <a href="#main_business" id="skip-nav">본문 바로가기</a>
     <header><!--header-->
       <div class="header_wrap">
-        <h1 class="header_logo"><a href=""><img src="./img/logo.svg" alt="한국알콜산업KAI"><span class="blind">한국알콜산업KAI</span></a></h1>
+        <h1 class="header_logo">
+          <a href="">
+            <span class="blind">한국알콜산업KAI</span>
+            <img src="./img/logo.svg" alt="한국알콜산업KAI">
+          </a>
+        </h1>
         <nav class="header_nav">
           <span></span>
           <ul class="gnb_menu">
@@ -73,13 +75,32 @@
           </ul>
         </nav>
         <div class="header_util">
-          <div class="lang">
-            <a href="" class="on">KOR</a>
-            <a href="">ENG</a>
-            <a href="">CHN</a>
-          </div>
-          <div class="search">
-            <a href=".visual"><span class="blind">search</span></a>
+          <ul class="lang">
+            <li class="lang_item">
+              <a href="" class="on">KOR</a>
+            </li>
+            <li class="lang_item">
+              <a href="">ENG</a>
+            </li>
+            <li class="lang_item">
+              <a href="">CHN</a>
+            </li>
+          </ul>
+          <div class="search_open">
+            <a href="#" class="search_btn">
+              <span class="blind">search</span>
+            </a>
+            <div class="serch_box">
+              <form class="search_form" autocomplete="off">
+                <label class="search_label" for="search_field">검색어를 입력해주세요</label>
+                <div class="search_input">
+                  <input id="search_field" class="search_field" type="text">
+                  <button class="search_submit" type="submit">
+                    <span class="blind">search</span>
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -192,7 +213,7 @@
       </div> -->
     </header>
 
-    <main><!--main-->
+    <main><!--main S-->
       <div class="visual"><!--visual-->
         <ul class="visual_slider">
           <li class="slide">
@@ -280,7 +301,7 @@
         </div>
       </div>
 
-      <div class="chemical main_list"><!--business-->
+      <div class="chemical main_list"><!--chemical-->
         <h3>Green Chemical KAI</h3>
         <div class="chemical_box">
           <ul class="chemical_list">
@@ -458,11 +479,10 @@
           </div>
         </div>
       </div>
-
-    </main>
+    </main><!--main E-->
 
     <footer><!--footer-->
-      <!-- <a href="#" class="go_top"></a> -->
+      <a href="#" class="scroll-top"><i class="fas fa-angle-up"><span class="blind">처음으로 이동</span></i></a>
       <div class="footer_inner">
         <nav class="footer_nav">
           <ul>
@@ -498,5 +518,7 @@
       </div>
     </footer>
   </div>
+
+  <script src="js/main-js.js"></script>
 </body>
 </html>
