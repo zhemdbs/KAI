@@ -24,7 +24,7 @@ a {font-size: 16px; text-decoration: none;}
 strong {font-weight: 600;}
 
 ul {list-style: none;}
-ul::after {content: ''; clear: both;}
+ul::after {content: ''; clear: both; display: block;}
 
 img {vertical-align: top;}
 
@@ -58,10 +58,9 @@ img {vertical-align: top;}
 
 
 /*layout*/
-#skip_nav {position: absolute; top: -1px; left: 0; background-color: #333; z-index: 99999;}
-#skip_nav a:link {color: #333;}
-#skip_nav a {position: absolute; top: 0; left: 0; padding: 10px 25px; margin-top: -100px; text-align: center; line-height: 1; white-space: nowrap; background: #000;}
 #wrap {width: 100%; background-color: var(--main-color3);}
+#skip-nav {position: fixed; left: 0; top: -40px; width: 100%; line-height: 40px; text-align: center; background-color: rgba(0, 0, 0, 0.7); color: #ffffff; font-size: 16px; transition: top 0.3s; z-index: 10000;}
+#skip-nav:focus {top: 0;}
 header {width: 100%; height: 90px; padding: 0 44px; position: fixed; top: 20px; left: 0; z-index: 300; transition: 0.5s;}
 .m_header {display: none; position: relative; height: 100%; width: 100%;}
 .header_nav a {display: block; line-height: 1.7; transition: all 0.3s;}
@@ -76,7 +75,7 @@ main .news {width: 100%;}
 main .notice {padding-bottom: 120px; width: 100%;}
 main .corp.main_list {padding: 0;}
 main .corp {width: 100%;}
-footer {padding: 58px 0 110px; background-color: var(--footer-color);}
+footer {padding: 58px 0 110px; background-color: var(--footer-color); position: relative;}
 footer * {color: var(--more-color); transition: 0.5s ease;}
 
 
@@ -132,19 +131,22 @@ header.on .header_util {padding: 23px 0; padding-right: 50px}
 .header_wrap .header_logo {width: 151px; height: 27px; margin: 31px 0;}
 .header_wrap .header_logo img {width: 151px; height: 27px;}
 .header_wrap .header_nav .gnb_menu > .gnb_list {float: left; position: relative;}
-.header_wrap .header_nav .gnb_menu > .gnb_list a {padding: 31px 32px; font-size: 18px; font-weight: 600; color: var(--main-color2);}
-.header_wrap .header_util {padding: 31px 0;}
+.header_wrap .header_nav .gnb_menu > .gnb_list a {padding: 30px 32px; font-size: 18px; font-weight: 600; color: var(--main-color2);}
+.header_wrap .header_util {padding: 29px 0;}
 .header_wrap .header_util .lang {float: left;}
-.header_wrap .header_util .lang a {padding: 0 10px; position: relative; font-size: 12px; font-weight: 600; font-family: 'Titillium', 'NotoSansKR', sans-serif;}
-.header_wrap .header_util .lang a::after {content: ''; display: block; width: 1px; height: 10px; background-color: var(--line-color); position: absolute; top: 5px; right: -3px;}
-.header_wrap .header_util .lang a.on {color: var(--main-color);}
-.header_wrap .header_util .lang a:first-child {padding-left: 0;}
-.header_wrap .header_util .lang a:last-child {padding-right: 0;}
-.header_wrap .header_util .lang a:last-child::after {display: none;}
-.header_wrap .header_util .search {display: inline-block; margin: 4px 0 0 31px;}
-.header_wrap .header_util .search a::after {display: block; font-family: 'icon'; content: '\e932'; font-size: 20px;}
+.header_wrap .header_util .lang li{float: left; padding: 0 10px; }
+.header_wrap .header_util .lang li a {position: relative; font-size: 12px; font-weight: 600; font-family: 'Titillium', 'NotoSansKR', sans-serif;}
+.header_wrap .header_util .lang li a::after {content: ''; display: block; width: 1px; height: 8px; background-color: var(--line-color); position: absolute; top: 50%; right: -10px; margin-top: -4px;}
+.header_wrap .header_util .lang li a.on {color: var(--main-color);}
+.header_wrap .header_util .lang li:first-child {padding-left: 0;}
+.header_wrap .header_util .lang li:last-child {padding-right: 0;}
+.header_wrap .header_util .lang li:last-child a::after {display: none;}
+.header_wrap .header_util .search_open {display: inline-block; margin: 9px 0 0 31px;}
+.header_wrap .header_util .search_open a::after {display: block; font-family: 'icon'; content: '\e932'; font-size: 20px;}
+.header_wrap .header_util .search_open .serch_box {display: none; width: 100%; }
+
 /*header-depth*/
-.header_wrap .header_nav span {visibility: hidden; opacity: 0; height: 0; position: absolute; top: 93px; left: 0; right: 0; bottom: 0; background: rgba(33, 33, 33, 0.95) url(../img/menu-typo.png) no-repeat 95.8% bottom;}
+.header_wrap .header_nav span {visibility: hidden; opacity: 0; height: 0; position: absolute; top: 90px; left: 0; right: 0; bottom: 0; background: rgba(33, 33, 33, 0.95) url(../img/menu-typo.png) no-repeat 95.8% bottom;}
 .header_wrap .header_nav:hover span {visibility: inherit; opacity: 1; height: 290px;}
 .header_wrap .header_nav .gnb_menu > li:hover a {color: var(--main-color);}
 .header_wrap .header_nav ul > li:last-child .gnb_dropmenu {border-right: 0;}
@@ -349,7 +351,10 @@ header.on .header_util {padding: 23px 0; padding-right: 50px}
 .corp_box .corp_inner .office_inner span::after {display: block; content: '\e903'; font-family: 'icon'; font-size: 13px; line-height: 1; padding-top: 11px;}
 
 /*footer*/
-.go_top {position: fixed; display: block; width: 59px; height: 59px; bottom: 20px; right: 90px; background: #222;}
+.scroll-top {display: block; width: 59px; height: 59px; position: absolute; top: -22px; right: 90px; cursor: pointer; background: var(--main-color2); z-index: 999;}
+.scroll-top::after {display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; font-family: 'icon'; content: '\e900'; font-size: 14px; line-height: 59px; font-weight: normal; text-align: center; color: var(--main-color3); transition: color 300ms;}
+.scroll-top:hover {background-color: var(--main-color);}
+
 .footer_inner {max-width: 1200px; margin: 0 auto; position: relative;}
 .footer_nav {overflow: hidden; padding-bottom: 26px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); margin-bottom: 35px;}
 .footer_nav ul > li {float: left;}
