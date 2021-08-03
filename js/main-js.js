@@ -5,19 +5,21 @@ const headerElem = document.querySelector('header');
 const openNav = document.querySelector('.m_header');
 const openSub = document.querySelector('.m-menu_btn');
 const closeSub = document.querySelector('.m-menu_close');
-// const subDepth = document.querySelectorAll('.m-menu > li');
 
-openSub.addEventListener('click', clickOpen)
-closeSub.addEventListener('click', clickClose)
-// subDepth.addEventListener('click', openDepth)
+let current = 0;
+let slides = document.querySelectorAll('.slide');
+const dot = document.querySelectorAll('.pager');
+const wave = document.querySelectorAll('.wave');
+const fadeIn = document.querySelectorAll('.visual_text > p');
 
-var current = 0;
-var slides = document.querySelectorAll('.slide');
-var dot = document.querySelectorAll('.pager');
-var wave = document.querySelectorAll('.wave');
-var fadeIn = document.querySelectorAll('.visual_text > p');
 window.addEventListener('scroll', scrollWork);
+openSub.addEventListener('click', clickOpen);
+closeSub.addEventListener('click', clickClose);
+btnSearch.addEventListener('click', openSearch);
+btnCloseSearch.addEventListener('click', CloseSearch);
 
+
+//스크롤
 function scrollWork() {
     let sTop = htmlElem.scrollTop;
     if (sTop > 50) {
