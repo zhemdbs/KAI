@@ -3,7 +3,7 @@
 
 ## *미리보기*
 ____________
-![미리보기](https://user-images.githubusercontent.com/85764721/127954142-f192fa49-a7ce-49ab-af15-cae8c5ec8611.gif)
+![미리보기](https://user-images.githubusercontent.com/85764721/127954810-5b624f1d-3c9c-432c-8e97-3dc874326d3a.gif)
 
 
 ## *사용스택*
