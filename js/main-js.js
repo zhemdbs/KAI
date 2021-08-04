@@ -3,14 +3,15 @@
 const htmlElem = document.querySelector('html');
 const bodyElem = document.querySelector('body');
 const headerElem = document.querySelector('header');
+
 const openNav = document.querySelector('.m_header');
 const openSub = document.querySelector('.m-menu_btn');
 const closeSub = document.querySelector('.m-menu_close');
+
 // const subDepth = document.querySelectorAll('.m-menu > li');
 const search= document.querySelector('.search');
 const btnSearch = document.querySelector('.search_open');
 const btnCloseSearch = document.querySelector('.search_close');
-const serchBox = document.querySelector('.serch_box');
 
 let current = 0;
 let slides = document.querySelectorAll('.slide');
@@ -31,14 +32,11 @@ function openSearch(ev) {
   bodyElem.classList.add('search_open');
   search.classList.add('active');
 }
-
 function closeSearch(ev) {
   ev.preventDefault();
   bodyElem.classList.remove('search_open');
   search.classList.remove('active');
-
 }
-
 
 
 //스크롤
