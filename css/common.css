@@ -51,6 +51,7 @@ img {vertical-align: top;}
 	--stock-color: #EC429A;
 	--line-color: #C7C7C7;
 	--text2-color: #666666;
+	--text3-color: #DDDDDD;
 	--aboutback-color: #F8F8F8;
 	--infoback-color: #E7E7E5;
 	--footer-color: #333333;
@@ -149,9 +150,9 @@ header.on .header_util {padding: 23px 0; padding-right: 50px}
 .search .search_box .search_box_inner .search_form {width: 100%; height: 100%; margin: 0 auto; max-width: 1200px; padding: 59px 0 49px 0; position: relative;}
 .search .search_box .search_box_inner .search_form .search_label {display: block; padding-bottom: 18px; font-size: 16px; color: var(--text2-color);}
 .search .search_box .search_box_inner .search_form .search_input {position: relative; width: 100%; height: 80px;}
-.search .search_box .search_box_inner .search_form .search_input .search_field {display: block; width: 100%; height: 100%; padding: 0 50px 0 0; position: relative; border: none; box-sizing: border-box; background: transparent; border-bottom: 4px solid #DDD;}
+.search .search_box .search_box_inner .search_form .search_input .search_field {display: block; width: 100%; height: 100%; padding: 0 50px 0 0; position: relative; border: none; box-sizing: border-box; background: transparent; border-bottom: 4px solid var(--text3-color);}
 .search .search_box .search_box_inner .search_form .search_input .search_submit {height: 100%; padding: 0; width: 32px; position: absolute; right: 0; top: 0; background: none; border: none; cursor: pointer;}
-.search .search_box .search_box_inner .search_form .search_input .search_submit::after {display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; font-family: 'icon'; content: '\e932'; font-size: 33px; line-height: 80px; font-weight: normal; text-align: center; color: #DDD;}
+.search .search_box .search_box_inner .search_form .search_input .search_submit::after {display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; font-family: 'icon'; content: '\e932'; font-size: 33px; line-height: 80px; font-weight: normal; text-align: center; color: var(--text3-color);}
 .search .search_box .search_box_inner .search_close {width: 50px; height: 50px; position: absolute; top: 45px; right: 35px;}
 .search .search_box .search_box_inner .search_close::after {display: block; width: 100%; height: 100%; font-family: 'icon'; content: '\e944'; font-size: 32px; font-weight: normal; text-align: center; line-height: 50px; color: var(--main-color2);}
 /*search.active*/
@@ -218,7 +219,7 @@ header.on .header_util {padding: 23px 0; padding-right: 50px}
 .m_header.on .m-menu_container .m-addition_nav {width: 320px; padding: 0 15px; position: absolute; bottom: 20px; right: 0; z-index: 652;}
 .m_header.on .m-addition_nav .m-addition_menu > li {float: left;}
 .m_header.on .m-addition_nav .m-addition_menu > li a {display: block; position: relative; font-size: 13px; font-weight: 400; color: var(--main-color2);}
-.m_header.on .m-addition_nav .m-addition_menu > li a::after {content: ''; display: block; width: 1px; height: 12px; position: absolute; right: 0; top: 50%; margin-top: -6px; background: #DDD;}
+.m_header.on .m-addition_nav .m-addition_menu > li a::after {content: ''; display: block; width: 1px; height: 12px; position: absolute; right: 0; top: 50%; margin-top: -6px; background: var(--text3-color);}
 .m_header.on .m-addition_nav .m-addition_menu > li a:first-child {padding-right: 10px;}
 .m_header.on .m-addition_nav .m-addition_menu > li.competent a {padding-left: 10px;}
 .m_header.on .m-addition_nav .m-addition_menu > li.competent a::after {display: block; width: 12px; height: 12px; position: absolute; right: 0; top: 50%; margin-top: -6px; font-family: 'icon'; content: '\e945'; font-size: 12px; font-weight: normal; line-height: 1; background: none;}
@@ -309,14 +310,14 @@ header.on .header_util {padding: 23px 0; padding-right: 50px}
 
 /*6.news*/
 .news_box {max-width: 1200px; margin: 0 auto;}
-.news_list > li {border-bottom: 1px solid #DDDDDD; cursor: pointer;}
+.news_list > li {border-bottom: 1px solid var(--text3-color); cursor: pointer;}
 .news_list > li:hover {border-bottom: 1px solid var(--main-color); transition: 0.5s ease-in-out;}
 .news_list > li > div{display: inline-block;}
 .news_list > li .news_time {width: 132px; padding: 31px 0;}
 .news_list > li .news_time * {display: block; text-align: center; font-family: 'Titillium', 'NotoSansKR', sans-serif;}
 .news_list > li:hover .news_time * {color: var(--main-color); transition: 0.5s ease-in-out;}
-.news_list > li .news_time p {font-size: 48px; font-weight: 400; line-height: 1; color: #DDDDDD;}
-.news_list > li .news_time span {font-size: 18px; font-weight: 400; line-height: 1; color: #DDDDDD;}
+.news_list > li .news_time p {font-size: 48px; font-weight: 400; line-height: 1; color: var(--text3-color);}
+.news_list > li .news_time span {font-size: 18px; font-weight: 400; line-height: 1; color: var(--text3-color);}
 .news_list > li .news_content {width: 960px; padding: 34px 24px 36px;}
 .news_list > li .news_content .title {margin-bottom: 9px;}
 .news_list > li .news_content .title span {border: 1px solid var(--main-color); color: var(--main-color); padding: 0 17px;  margin-right: 16px;}
