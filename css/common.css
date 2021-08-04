@@ -141,9 +141,25 @@ header.on .header_util {padding: 23px 0; padding-right: 50px}
 .header_wrap .header_util .lang li:first-child {padding-left: 0;}
 .header_wrap .header_util .lang li:last-child {padding-right: 0;}
 .header_wrap .header_util .lang li:last-child a::after {display: none;}
-.header_wrap .header_util .search_open {display: inline-block; margin: 9px 0 0 31px;}
-.header_wrap .header_util .search_open a::after {display: block; font-family: 'icon'; content: '\e932'; font-size: 20px;}
-.header_wrap .header_util .search_open .serch_box {display: none; width: 100%; }
+/*search*/
+.header_util .search {display: inline-block; margin: 9px 0 0 31px;}
+.header_util .search .search_open::after {display: block; font-family: 'icon'; content: '\e932'; font-size: 20px;}
+.header_util .search .search_box {visibility: hidden; opacity: 0; transform: translateY(-100%); padding: 0 60px; width: 100%; position: fixed; top: 0; left: 0; right: 0; background: var(--main-color3); z-index: 9999; transition: all 0.3s ease;}
+.search .search_box .search_box_inner {width: 100%; height: 100%; position: relative; padding: 0 115px 0 240px;}
+.search .search_box .search_box_inner .search_form {width: 100%; height: 100%; margin: 0 auto; max-width: 1200px; padding: 59px 0 49px 0; position: relative;}
+.search .search_box .search_box_inner .search_form .search_label {display: block; padding-bottom: 18px; font-size: 16px; color: var(--text2-color);}
+.search .search_box .search_box_inner .search_form .search_input {position: relative; width: 100%; height: 80px;}
+.search .search_box .search_box_inner .search_form .search_input .search_field {display: block; width: 100%; height: 100%; padding: 0 50px 0 0; position: relative; border: none; box-sizing: border-box; background: transparent; border-bottom: 4px solid #DDD;}
+.search .search_box .search_box_inner .search_form .search_input .search_submit {height: 100%; padding: 0; width: 32px; position: absolute; right: 0; top: 0; background: none; border: none; cursor: pointer;}
+.search .search_box .search_box_inner .search_form .search_input .search_submit::after {display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; font-family: 'icon'; content: '\e932'; font-size: 33px; line-height: 80px; font-weight: normal; text-align: center; color: #DDD;}
+.search .search_box .search_box_inner .search_close {width: 50px; height: 50px; position: absolute; top: 45px; right: 35px;}
+.search .search_box .search_box_inner .search_close::after {display: block; width: 100%; height: 100%; font-family: 'icon'; content: '\e944'; font-size: 32px; font-weight: normal; text-align: center; line-height: 50px; color: var(--main-color2);}
+/*search.active*/
+.header_wrap .header_util .search.active .search_box {visibility: visible; opacity: 1; transform: translateY(0);}
+.search_open .header_logo {z-index: 10000;}
+
+
+
 
 /*header-depth*/
 .header_wrap .header_nav span {visibility: hidden; opacity: 0; height: 0; position: absolute; top: 90px; left: 0; right: 0; bottom: 0; background: rgba(33, 33, 33, 0.95) url(../img/menu-typo.png) no-repeat 95.8% bottom;}
