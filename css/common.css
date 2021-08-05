@@ -4,7 +4,6 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,time,figure,article,nav,header,footer,hgroup,video,audio,aside,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,button {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-weight: inherit;
 	font-style: inherit;
 	vertical-align: baseline;
@@ -211,10 +210,18 @@ header.on .header_util {padding: 23px 0; padding-right: 50px}
 .m_header.on .m-menu_nav .m-menu > li a::after {display: block; width: 14px; height: 14px; position: absolute; right: 0; top: 50%; margin-top: -7px; font-family: 'icon'; content: '\e91d'; font-size: 10px; font-weight: normal; line-height: 14px; color: #444;}
 .m_header.on .m-menu_nav .m-menu > li a span {display: block; width: 125px; padding-right: 28px; position: relative;}
 
-/* .m_header.on .m-menu > li.on .m-menu_depth_nav {width: 165px; height: 100%; position: absolute; top: 0; right: -165px; background: #f6f6f6;}
-.m_header.on .m-menu > li.on .m-menu_depth_nav .m-menu_depth {width: 100%; height: 100%; position: relative; overflow: hidden;}
-.m_header.on .m-menu > li.on .m-menu_depth_nav .m-menu_depth li {position: absolute; left: 0; right: 0; top: 0; bottom: 0; overflow-y: auto;}
-.m_header.on .m-menu > li.on .m-menu_depth_nav .m-menu_depth li .m-depth_sub {display: block; width: 100%; padding: 0 20px;} */
+/*sub-nav*/
+.m-menu_depth_nav.open {transform: translateX(-100%);}
+.m-menu_depth_nav {width: 165px; height: 100%; position: absolute; top: 0; right: -165px; background: #f6f6f6; transform: translateX(0%); transition: all 0.3s ease;}
+.m-menu_depth_nav .m-menu_depth {width: 100%; height: 100%; position: relative; overflow: hidden;}
+.m-menu_depth_nav .m-menu_depth .m-depth_item.on {opacity: 1; visibility: visible;}
+.m-menu_depth_nav .m-menu_depth .m-depth_item {opacity: 0; visibility: hidden; position: absolute; left: 0; right: 0; top: 0; bottom: 0; overflow-y: auto;}
+.m-menu_depth_nav .m-menu_depth .m-depth_item .m-depth_sub {display: block; width: 100%; padding: 0 20px;}
+.m-menu_depth_nav .m-menu_depth .m-depth_item .m-depth_sub > li {display: block; width: 100%;}
+.m-menu_depth_nav .m-menu_depth .m-depth_item .m-depth_sub > li > a {display: block; padding: 16px 0; font-size: 14px; line-height: 1.38; font-weight: 600; color: #888;}
+
+
+
 
 .m_header.on .m-menu_container .m-addition_nav {width: 320px; padding: 0 15px; position: absolute; bottom: 20px; right: 0; z-index: 652;}
 .m_header.on .m-addition_nav .m-addition_menu > li {float: left;}
