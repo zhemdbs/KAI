@@ -205,21 +205,29 @@ header.on .header_util {padding: 23px 0; padding-right: 50px}
 .m_header.on .m-menu_container .m-container_inner {width: 100%; height: 100%; position: relative; border-top: 1px solid #EEE; border-bottom: 1px solid #EEE; overflow: hidden;}
 .m_header.on .m-menu_nav {width: 100%; height: 100%; position: relative;}
 .m_header.on .m-menu_nav .m-menu {position: absolute; left: 0; right: 0; top: 0; bottom: -1px; overflow-y: auto;}
-.m_header.on .m-menu_nav .m-menu > li {display: block; width: 100%;}
-.m_header.on .m-menu_nav .m-menu > li a {display: block; width: 100%; padding: 15px 0; position: relative; font-size: 15px; line-height: 1.38; font-weight: 600; color: var(--main-color2); border-bottom: 1px solid #EEE;}
-.m_header.on .m-menu_nav .m-menu > li a::after {display: block; width: 14px; height: 14px; position: absolute; right: 0; top: 50%; margin-top: -7px; font-family: 'icon'; content: '\e91d'; font-size: 10px; font-weight: normal; line-height: 14px; color: #444;}
-.m_header.on .m-menu_nav .m-menu > li a span {display: block; width: 125px; padding-right: 28px; position: relative;}
+.m_header.on .m-menu_nav .m-menu > .menu_item {display: block; width: 100%;}
+.m_header.on .m-menu_nav .m-menu > .menu_item > a {display: block; width: 100%; padding: 15px 0; position: relative; font-size: 15px; line-height: 1.38; font-weight: 600; color: var(--main-color2); border-bottom: 1px solid #EEE;}
+.m_header.on .m-menu_nav .m-menu > .menu_item > a::after {display: block; width: 14px; height: 14px; position: absolute; right: 0; top: 50%; margin-top: -7px; font-family: 'icon'; content: '\e91d'; font-size: 10px; font-weight: normal; line-height: 14px; color: #444;}
+.m_header.on .m-menu_nav .m-menu > .menu_item > a > span {display: block; width: 125px; padding-right: 28px; position: relative;}
+.m_header.on .m-menu_nav .m-menu > .menu_item.on > a > span::after {content: ''; display: block; width: 7px; height: 7px; position: absolute; right: 12px; top: 50%; margin-top: -3.5px; background: var(--main-color); border-radius: 50%;}
 
 /*sub-nav*/
-.m-menu_depth_nav.open {transform: translateX(-100%);}
+.menu_item.on .sub_wrap {transform: translateX(-100%);}
+.menu_item .sub_wrap {width: 165px; position: absolute; top: 0; right: -165px; background: #f6f6f6; transform: translateX(0%); transition: all 0.3s ease; z-index: 1;}
+.menu_item .sub_wrap .gnb_sub {width: 100%; display: block; padding: 0 20px;}
+.menu_item .sub_wrap .gnb_sub > li {display: block; width: 100%;}
+.menu_item .sub_wrap .gnb_sub > li > a {display: block; padding: 16px 0; font-size: 14px; line-height: 1.38; font-weight: 600; color: #888;}
+.menu_item .sub_wrap .gnb_sub > li > a > span {color: inherit;}
+
+/* .m-menu_depth_nav.open {transform: translateX(-100%);}
+.m-menu_depth_nav.open .m-menu_depth .m-depth_item.on {opacity: 1; visibility: visible;}
 .m-menu_depth_nav {width: 165px; height: 100%; position: absolute; top: 0; right: -165px; background: #f6f6f6; transform: translateX(0%); transition: all 0.3s ease;}
 .m-menu_depth_nav .m-menu_depth {width: 100%; height: 100%; position: relative; overflow: hidden;}
-.m-menu_depth_nav .m-menu_depth .m-depth_item.on {opacity: 1; visibility: visible;}
 .m-menu_depth_nav .m-menu_depth .m-depth_item {opacity: 0; visibility: hidden; position: absolute; left: 0; right: 0; top: 0; bottom: 0; overflow-y: auto;}
 .m-menu_depth_nav .m-menu_depth .m-depth_item .m-depth_sub {display: block; width: 100%; padding: 0 20px;}
 .m-menu_depth_nav .m-menu_depth .m-depth_item .m-depth_sub > li {display: block; width: 100%;}
 .m-menu_depth_nav .m-menu_depth .m-depth_item .m-depth_sub > li > a {display: block; padding: 16px 0; font-size: 14px; line-height: 1.38; font-weight: 600; color: #888;}
-
+ */
 
 
 
