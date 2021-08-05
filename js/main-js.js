@@ -7,8 +7,9 @@ const headerElem = document.querySelector('header');
 const openNav = document.querySelector('.m_header');
 const openSub = document.querySelector('.m-menu_btn');
 const closeSub = document.querySelector('.m-menu_close');
+const msubNav = document.querySelector('.m-menu')
+const mSubItem = msubNav.querySelectorAll('.menu_item');
 
-// const subDepth = document.querySelectorAll('.m-menu > li');
 const search= document.querySelector('.search');
 const btnSearch = document.querySelector('.search_open');
 const btnCloseSearch = document.querySelector('.search_close');
@@ -24,7 +25,6 @@ btnSearch.addEventListener('click', openSearch);
 btnCloseSearch.addEventListener('click', closeSearch);
 openSub.addEventListener('click', clickOpen);
 closeSub.addEventListener('click', clickClose);
-// subDepth.addEventListener('click', openDepth)
 
 //검색
 function openSearch(ev) {
@@ -100,4 +100,16 @@ function clickOpen() {
 }
 function clickClose() {
   openNav.classList.remove('on');
+}
+
+
+for (let subitem of mSubItem) {
+  subitem.addEventListener('click', function(ev) {
+    ev.preventDefault();
+    console.log(subitem);
+    if (!subitem.classList.contains('on')) subitem.classList.add('on');
+    else if(subitem.classList.contains('menu_item')) {
+      subitem.classList.remove('on')
+    }
+  });
 }
