@@ -213,7 +213,7 @@ header.on .header_util {padding: 23px 0; padding-right: 50px}
 
 /*sub-nav*/
 .menu_item.on .sub_wrap {transform: translateX(-100%);}
-.menu_item .sub_wrap {width: 165px; position: absolute; top: 0; right: -165px; background: #f6f6f6; transform: translateX(0%); transition: all 0.3s ease; z-index: 1;}
+.menu_item .sub_wrap {width: 165px; height: 307px; position: absolute; top: 0; right: -165px; background: #f6f6f6; transform: translateX(0%); transition: all 0.3s ease; z-index: 1;}
 .menu_item .sub_wrap .gnb_sub {width: 100%; display: block; padding: 0 20px;}
 .menu_item .sub_wrap .gnb_sub > li {display: block; width: 100%;}
 .menu_item .sub_wrap .gnb_sub > li > a {display: block; padding: 16px 0; font-size: 14px; line-height: 1.38; font-weight: 600; color: #888;}
