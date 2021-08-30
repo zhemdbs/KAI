@@ -118,8 +118,8 @@ h3 {font-family: 'Titillium', 'NotoSansKR', sans-serif; font-size: 55px; font-we
 
 
 /*header*/
-header.on.active {top: -75px;}
-header.on {position: fixed; top: 0; height: 75px; padding: 0;}
+header.on.active {top: -79px;}
+header.on {position: fixed; top: 0; height: 79px; padding: 0;}
 header.on .header_wrap {padding: 0 90px;}
 header.on .header_logo {margin: 23px 0; margin-left: 50px;}
 header.on .header_nav span {top: 74px;}
